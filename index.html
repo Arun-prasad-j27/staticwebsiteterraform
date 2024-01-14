@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Prasad J - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    text-align: center;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+        section {
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+        img {
+    max-width: 100%;
+    max-height: 200px; /* Set the maximum height as per your preference */
+    border-radius: 50%;
+    border: 5px solid #3498db; /* Added border to profile picture */
+    margin-bottom: 20px;
+    animation: scaleIn 1s ease-out;
+}
+        
+        .project {
+            text-align: left; /* Align project descriptions to the left */
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .project:hover {
+            background-color: #ecf0f1;
+        }
+
+        .description {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-link {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: #e74c3c;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arun Prasad J</h1>
+    </header>
+
+    <section id="about">
+        <img src="profile.jpg" alt="Arun Prasad J - Profile Picture">
+        <p>Welcome to my portfolio! I am Arun Prasad J, a DevOps and Cloud Engineer fresher with a passion for automating and optimizing processes. My goal is to contribute to the world of technology by leveraging my skills in cloud computing, automation, and infrastructure as code.</p>
+
+        <p>I recently graduated with a degree in Computer Science, and during my academic journey, I developed a keen interest in cloud technologies, particularly AWS. I have hands-on experience in implementing AWS services and managing infrastructure using tools like Terraform.</p>
+
+        <p>My technical skills include proficiency in scripting languages such as Python and Bash, version control systems like Git, and continuous integration/continuous deployment (CI/CD) pipelines. I am eager to explore new technologies, learn, and adapt to the ever-evolving landscape of DevOps and cloud computing.</p>
+
+        <p>Feel free to explore my projects below, and click on a project to see its description.</p>
+    </section>
+
+    <section class="project" onclick="showDescription(1)">
+        <h2 style="color: #e74c3c;">1. AWS Services Automation using AWS CLI</h2>
+        <div class="description" id="description1">
+            <p>Description of the first project goes here.....</p>
+        </div>
+    </section>
+
+    <section class="project" onclick="showDescription(2)">
+        <h2 style="color: #2ecc71;">2. GitHub API Integration</h2>
+        <div class="description" id="description2">
+            <p>Description of the second project goes here...</p>
+        </div>
+    </section>
+
+    <section class="project" onclick="showDescription(3)">
+        <h2 style="color: #f39c12;">3. VPC Architecture using Private Subnets and NAT Gateway</h2>
+        <div class="description" id="description3">
+            <p>Description of the third project goes here...</p>
+        </div>
+    </section>
+
+    <section class="project" onclick="showDescription(4)">
+        <h2 style="color: #3498db;">4. Hosting Static Website using Terraform</h2>
+        <div class="description" id="description4">
+            <p>Description of the fourth project goes here...</p>
+        </div>
+    </section>
+
+    <div class="contact-info">
+        <a class="contact-link" href="mailto:arunprasad2705@gmail.com" target="_blank" rel="noopener" title="Email">
+            ✉️ Email
+        </a>
+        <a class="contact-link" href="tel:+9591178329" target="_blank" rel="noopener" title="Contact Number">
+            📞 +9591178329
+        </a>
+        <a class="contact-link" href="https://github.com/Arun-prasad-J27" target="_blank" rel="noopener" title="GitHub">
+            🌐 GitHub
+        </a>
+    </div>
+
+    <script>
+        function showDescription(projectNumber) {
+            var description = document.getElementById("description" + projectNumber);
+            if (description.style.display === "block") {
+                description.style.display = "none";
+            } else {
+                description.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
