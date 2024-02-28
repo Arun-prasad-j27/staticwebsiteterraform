@@ -35,7 +35,7 @@ Update the Terraform configuration files with your own configurations:
 - **variables.tf**: Adjust variables if necessary.
 - **provider.tf**: If necessary, update provider configurations (e.g., AWS region).
 
-![Terraform Apply](images/terraform_apply.png)
+
 
 ### 3. Initialize Terraform
 
@@ -77,7 +77,7 @@ Upload your website files to the S3 bucket created by Terraform:
 
 Access your website using the S3 bucket URL or the custom domain if configured. Verify that both `index.html` and `error.html` are accessible.
 
-![check index.html and erro.html ](screenshots/staticwebsite.png.png)
+![check index.html and error.html ](screenshots/staticwebsite.png)
 ### 7. Clean Up
 
 After testing, tear down the infrastructure to avoid unnecessary charges:
